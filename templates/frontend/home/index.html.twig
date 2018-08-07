@@ -1,0 +1,26 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}Sayrin - Agencia Digital De Diseño{% endblock %}
+
+{% block body %}
+
+
+{% include 'frontend/components/heading.html.twig' %}
+{% include 'frontend/components/intro.html.twig' %}
+{% include 'frontend/components/services.html.twig' %}
+{% include 'frontend/components/projects.html.twig' %}
+{% include 'frontend/components/team.html.twig' %}
+{% include 'frontend/components/lastblogentries.html.twig' %}
+
+{# image-footer #}
+
+<div class="uk-section uk-section-large">
+  <div class="uk-container uk-text-center">
+    <img uk-img src="https://cdn.dribbble.com/users/369527/screenshots/4347634/pietrasiak_data_center2.png" alt="">
+    <hr class="uk-margin-xlarge">
+  </div>
+</div>
+
+{% include 'frontend/components/footer.html.twig' %}
+
+{% endblock %}

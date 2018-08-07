@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {# basic meta-tags #}
+    <meta charset="UTF-8">
+    <meta name="keywords" content="paginas chile,paginas web,diseño web,diseño paginas web,diseñadores de paginas Web,chile,sayrin,sayrin.cl,agencia digital,desarrollador web,publicidad"/>
+    <meta name="description" content="Sayrin SPA es una agencia de diseño digital. Creamos tu identidad y marca corporativa, entregando servicios tales como fotografía, branding, diseño web, tarjetas de presentación, etc."/>
+    <meta name="subject" content="Agencia Digital de Diseño">
+    <meta name="copyright" content="Sayrin SPA">
+    <meta name="language" content="ES">
+    <meta name="robots" content="index"/>
+    <meta name="Classification" content="Business">
+    <meta name="author" content="Sayrin SPA, contacto@sayrin.cl">
+    <meta name="designer" content="Sayrin SPA">
+    <meta name="url" content="http://www.sayrin.cl">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ asset('images/components/favicon.png') }}">
+
+    {# basic social networks tags #}
+
+    <title>
+      {% block title %}{% endblock %}
+    </title>
+    {% block stylesheets %}
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css"/>
+      <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500" rel="stylesheet">
+    {% endblock %}
+  </head>
+  <body>
+    <div id="app">
+      {% block body %}{% endblock %}
+    </div>
+    {% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+<script src="{{ asset('assets/main.js') }}"></script>
+    {% endblock %}
+  </body>
+</html>
